@@ -38,6 +38,7 @@ jobs:
               -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml
               -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/
     BUILD_AND_PUBLISH:
+      needs: Testing
       runs-on: ubutu-latest
       steps: 
         - name: Code checout
